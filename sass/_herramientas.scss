@@ -1,0 +1,23 @@
+
+
+/*******PÁGINA HERRAMIENTAS******/
+
+.herramientas{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2%;
+    
+}
+
+
+.tituloH{
+    
+    border-radius:10px;
+    border-color: $morado;
+    border-style: solid;
+    text-align: center;
+    padding: 2%;
+    margin: 2% 0%;
+    
+}

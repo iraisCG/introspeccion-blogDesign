@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@200;400;600;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Urbanist:wght@200;400;600;700;900&display=swap');
+
+
+ 
+ //variables
+ $texto:Urbanist;
+ $titulos:Anton;
+ $morado: #4158e0;
+ $naranja:#ed6135;
+ $neutro: #eaeaea; 
+
+@mixin tamanio ($ancho,$alto){
+    width: $ancho;
+    height: $alto;
+ }
+ 
+ //estilos generales
+ p{
+    font-family: $texto;
+ }
+
+h1 {
+    font-family: $texto;
+    
+}
+
+h2 {
+    font-family: $texto;
+}
+
+h3 {
+    font-family: $texto;
+}
+
+/******* ESTILOS APLICADOS A NAV **********/
+nav{
+    @include tamanio(100%, auto);
+    
+}
+
+
+//partial
+
+@import "inicio.scss";
+@import "aplicaciones.scss";
+@import "referentes.scss";
+@import "herramientas.scss";
+@import "preguntas.scss";
+@import "footer.scss";
+
+//mediaq
+
+/*CONDICIONALES PARA SITIO WEB RESPONSIVO*/
+
+@media screen and (max-width: 800px){
+
+    
+
+    /*SE APLICARÁ EN LA CLASE .PRINCIPIO DE LA PARTE BIENVENIDA PÁGINA INICIO*/
+    .principio{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        text-align:center;
+        color: #eaeaea;
+        font-size: 3vw;
+
+        img{
+            @include tamanio(100%, auto);
+        }
+
+        h1{
+            font-size: 3rem;
+        }
+
+        p{
+            text-align:center;
+        }
+        
+    }
+
+    /*SE APLICARÁ EN LA CLASE .OPCIONES DE LA PARTE CONTENIDO PÁGINA INICIO*/
+    
+     .opciones{
+        display: flex;
+        flex-wrap:  wrap;
+    }
+
+    /*SE APLICARÁ EN LA CLASE .contenedorAplicaciones DE LA PARTE CONTENIDO PÁGINA APLICACIONES*/
+    .contenedorAplicaciones{
+        display:grid;
+        grid-template-areas:
+        "titulo titulo texto texto texto"
+        "titulo titulo texto texto texto"
+        "imagen imagen imagen imagen imagen"
+        "imagen imagen imagen imagen imagen"
+        "imagen imagen imagen imagen imagen";
+        grid-template-columns: repeat(5, 18%);
+        grid-template-rows: repeat(5, auto);
+        padding: 2%;
+        grid-gap: 2%;
+    }
+
+    /*SE APLICARÁ EN LA CLASE .contenedorAplicaciones DE LA PARTE CONTENIDO PÁGINA REFERENTES*/
+    .contenedorReferentes{
+
+        padding: 2%;
+        display: block;
+        margin-top: 5%;
+        font-size: 2.7vw;
+
+        div{
+            margin: 3%;
+        }
+        
+    }   
+
+    .trabajoImagenes{
+
+        div{
+            margin:0;
+        }
+        
+    }
+
+
+    /*SE APLICARÁ EN LA CLASE .contenedorHerramientas DE LA PARTE CONTENIDO PÁGINA REFERENTES*/
+    .tarjetasH{
+    display: flex;
+    flex-direction: center;
+    align-items: center;
+    text-align: center;
+    }
+
+    /*SE APLICARÁ EN LA CLASE .contenedorHerramientas DE LA PARTE CONTENIDO PÁGINA HERRAMIENTAS*/
+
+    .herramientas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+        .titulosH{
+            margin: 0%;
+        }
+
+        .info{
+            margin: 5%;
+        }
+    }
+
+    /*SE APLICARÁ EN LA CLASE .contenedorHerramientas DE LA PARTE CONTENIDO PÁGINA PREGUNTAS*/
+
+    .contenedorPregunta{
+        display: block;
+        padding: 2%;
+    }
+    .tituloPregunta{
+        margin-bottom: 5%;
+    }
+
+
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,64 @@
+
+
+/********PÁGINA APLICACIONES*******/
+
+.tituloA{
+    
+    border-radius:10px;
+    border-color: $morado;
+    border-width: 2%;
+    border-style: solid;
+    padding: 2%;
+    text-align: center;
+    margin: 2%;
+    
+}
+
+.contenedorAplicaciones{
+    display:grid;
+    grid-template-areas:
+    "titulo titulo texto texto texto"
+    "titulo titulo texto texto texto"
+    "titulo titulo imagen imagen imagen"
+    "titulo titulo imagen imagen imagen"
+    "titulo titulo imagen imagen imagen";
+    grid-template-columns: repeat(5, 18%);
+    grid-template-rows: repeat(5, auto);
+    padding: 2%;
+    grid-gap: 2%;
+
+    img{
+        object-fit: cover;
+        @include tamanio(100%, 100%);
+        border-radius:10px;
+        border-width: 2%;
+    }
+}
+
+
+.tituloAplicacion{
+    grid-area: titulo;
+    border-radius:10px;
+    border-width: 2%;
+    overflow: hidden;
+    
+}
+
+.textoAplicacion{
+    grid-area: texto;
+    border-radius:10px;
+    border-color: $morado;
+    border-width: 2%;
+    border-style: solid;
+    padding: 2%;
+    overflow: hidden;
+
+}
+
+.ejemploAplicacion{
+    grid-area: imagen;
+    border-radius:10px;
+    border-width: 2%;
+    overflow: hidden;
+
+}

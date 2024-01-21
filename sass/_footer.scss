@@ -1,0 +1,23 @@
+
+/*****************PIE DE PÁGINA*******************/
+footer{
+    background-color: $morado;
+    @include tamanio(100%, auto);
+    padding: 1%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color:$neutro;
+    font-size:.6rem;
+
+    a {
+        color:$neutro;
+        padding: 1%;
+    }
+   
+    img {
+        @include tamanio(10%, auto);
+        margin: 2%; 
+    }
+}

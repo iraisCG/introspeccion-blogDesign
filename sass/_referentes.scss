@@ -1,0 +1,73 @@
+
+/******PÁGINA REFERENTES******/
+
+.tituloR{
+    
+    border-radius:10px;
+    border-color: $morado;
+    border-width: 2%;
+    border-style: solid;
+    padding: 2%;
+    text-align: center;
+    margin: 2%;
+    
+}
+
+.contenedorReferentes{
+    display: grid;
+    grid-template-areas: 
+    "bio bio bio imagen imagen"
+    "bio bio bio imagen imagen"
+    "trabajo trabajo texto texto texto"
+    "trabajo trabajo texto texto texto";
+    grid-template-columns: repeat(5, 18%);
+    grid-template-rows: repeat(4, 30);
+    padding: 2%;
+    grid-gap: 2%;
+    object-fit: cover;
+    @include tamanio(100%, auto );
+
+    img{
+        object-fit: cover;
+        @include tamanio(100%, 100%);
+        border-radius:10px;
+        border-width: 2%;
+    }
+   
+}
+
+.imagenReferente{
+    grid-area: imagen;
+    border-radius:10px;
+    border-color: $morado;
+    border-width: 2%;
+    border-style: solid;
+}
+
+.bioReferente{
+    grid-area: bio;
+    border-radius:10px;
+    border-color: $morado;
+    border-width: 2%;
+    border-style: solid;
+    padding: 2%;
+
+}
+
+.trabajoReferente{
+    grid-area: texto;
+    border-radius:10px;
+    border-color: $morado;;
+    border-width: 2%;
+    border-style: solid;
+    padding: 2%;
+
+}
+
+.trabajoImagenes{
+    grid-area: trabajo;
+    border-radius:10px;
+    border-color: $morado;
+    border-width: 2%;
+    border-style: solid;
+}
