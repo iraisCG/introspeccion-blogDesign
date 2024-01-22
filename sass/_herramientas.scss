@@ -7,6 +7,10 @@
     flex-direction: row;
     justify-content: space-between;
     padding: 2%;
+
+    div{
+        font-family: $texto;
+    }
     
 }
 
@@ -19,5 +23,11 @@
     text-align: center;
     padding: 2%;
     margin: 2% 0%;
+    color: $naranja;
+
+    h1{
+        font-family: $titulos;
+        font-size: 4rem;
+    }
     
 }

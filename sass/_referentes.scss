@@ -4,13 +4,27 @@
 .tituloR{
     
     border-radius:10px;
-    border-color: $morado;
-    border-width: 2%;
-    border-style: solid;
     padding: 2%;
     text-align: center;
     margin: 2%;
+
+
+    h1{
+        font-family: $titulos;
+        font-size: 4rem;
+        color: $naranja;
+    }
     
+}
+
+.bioReferente{
+    h2{
+        color: $morado;
+    }
+
+    h3{
+        color: $morado;
+    }
 }
 
 .contenedorReferentes{
@@ -32,6 +46,20 @@
         @include tamanio(100%, 100%);
         border-radius:10px;
         border-width: 2%;
+    }
+
+    h2{
+        color: $morado;
+        font-family: $titulos;
+        font-size: 2.5rem;
+    }
+
+    h3{
+        color: $morado;
+    }
+
+    h4{
+        color: $morado;
     }
    
 }

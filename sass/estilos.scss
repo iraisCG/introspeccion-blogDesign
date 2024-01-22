@@ -17,6 +17,15 @@
  }
  
  //estilos generales
+
+body{
+    background-color: $neutro;
+}
+ main{
+    background-color: $neutro;
+ }
+
+
  p{
     font-family: $texto;
  }
@@ -28,17 +37,29 @@ h1 {
 
 h2 {
     font-family: $texto;
+    
 }
 
 h3 {
     font-family: $texto;
 }
 
+h4 {
+    font-family: $texto;
+}
+
+
 /******* ESTILOS APLICADOS A NAV **********/
 nav{
     @include tamanio(100%, auto);
     
+    a:hover{
+        color:$naranja;
+    }
+      
 }
+
+
 
 
 //partial
@@ -102,20 +123,30 @@ nav{
         grid-template-rows: repeat(5, auto);
         padding: 2%;
         grid-gap: 2%;
+        font-size: .7rem;
+
+        h4{
+            font-size: 1rem;
+        }
     }
 
-    /*SE APLICARÁ EN LA CLASE .contenedorAplicaciones DE LA PARTE CONTENIDO PÁGINA REFERENTES*/
+    /*SE APLICARÁ EN LA CLASE .contenedorReferentes DE LA PARTE CONTENIDO PÁGINA REFERENTES*/
+   
+
     .contenedorReferentes{
 
-        padding: 2%;
+        padding: 4%;
         display: block;
-        margin-top: 5%;
-        font-size: 2.7vw;
+        font-size: .7rem;
+       
 
         div{
-            margin: 3%;
+            margin-bottom: 5%;
         }
         
+        h2{
+            font-size: 2rem;
+        }
     }   
 
     .trabajoImagenes{

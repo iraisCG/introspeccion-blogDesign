@@ -6,11 +6,15 @@
     
     border-radius:10px;
     border-color: $morado;
-    border-width: 2%;
-    border-style: solid;
     padding: 2%;
     text-align: center;
     margin: 2%;
+    color: $naranja;
+    
+    h1{
+        font-family: $titulos;
+        font-size: 4rem;
+    }
     
 }
 
@@ -52,6 +56,11 @@
     border-style: solid;
     padding: 2%;
     overflow: hidden;
+
+    h4{
+        color:$morado;
+    }
+    
 
 }
 
