@@ -82,7 +82,7 @@ h4 {
         align-items: center;
         text-align:center;
         color: $neutro;
-        font-size: 3vw;
+        font-size: .9rem;
 
         img{
             @include tamanio(100%, auto);
@@ -118,10 +118,10 @@ h4 {
         grid-template-rows: repeat(5, auto);
         padding: 2%;
         grid-gap: 2%;
-        font-size: .7rem;
+        font-size: .9rem;
 
         h4{
-            font-size: 1rem;
+            font-size: 1.5rem;
         }
     }
 
@@ -132,7 +132,7 @@ h4 {
 
         padding: 4%;
         display: block;
-        font-size: .7rem;
+        font-size: .9rem;
        
 
         div{
@@ -140,8 +140,10 @@ h4 {
         }
         
         h2{
-            font-size: 2rem;
+            font-size: 2.3rem;
         }
+
+        
     }   
 
     .trabajoImagenes{

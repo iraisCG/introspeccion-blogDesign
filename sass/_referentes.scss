@@ -43,7 +43,7 @@
 
     img{
         object-fit: cover;
-        @include tamanio(100%, 100%);
+        @include tamanio(100%, auto);
         border-radius:10px;
         border-width: 2%;
     }
