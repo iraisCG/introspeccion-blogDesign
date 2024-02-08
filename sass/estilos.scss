@@ -18,6 +18,8 @@
  
  //estilos generales
 
+
+
 body{
     background-color: $neutro;
 }
@@ -49,15 +51,7 @@ h4 {
 }
 
 
-/******* ESTILOS APLICADOS A NAV **********/
-nav{
-    @include tamanio(100%, auto);
-    
-    a:hover{
-        color:$naranja;
-    }
-      
-}
+
 
 
 
@@ -70,6 +64,7 @@ nav{
 @import "herramientas.scss";
 @import "preguntas.scss";
 @import "footer.scss";
+
 
 //mediaq
 
@@ -86,7 +81,7 @@ nav{
         justify-content: center;
         align-items: center;
         text-align:center;
-        color: #eaeaea;
+        color: $neutro;
         font-size: 3vw;
 
         img{
